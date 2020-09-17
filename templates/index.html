@@ -1,0 +1,23 @@
+{%extends "base.html"%}
+
+
+{%block body_page %}
+<div>
+ Hello, this is page body<br>
+
+The time right now is .........{{cur_date}}<br>
+</div>
+<p>Pending tasks are:
+<ul>
+ {%for task in tasks%}
+ <li> {{ task  }} </li>
+ {% endfor %}
+</ul>
+</p>
+{% endblock %}
+{%block title %}
+ INDEX PAGE
+{% endblock %}
+
+
+
